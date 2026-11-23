@@ -1,0 +1,37 @@
+name: Issue 188 offline workflow smoke
+on:
+  push:
+    branches: [codex/nsoc-nightly-action-188-proof]
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: recipes/content-pipeline/requirements.txt
+      - name: Install the actual recipe dependencies and validation tools
+        run: python -m pip install -r recipes/content-pipeline/requirements.txt pytest pytest-mock pyyaml
+      - name: Exercise exact example shell with offline CLI fixture
+        run: python _validation/crew188-smoke.py
+      - name: Test recipe contract and existing integration
+        env:
+          LLM_API_KEY: offline-placeholder
+        run: |
+          python -m pytest tests/test_workflow_example.py tests/test_recipe_contract.py -q
+          cd recipes/content-pipeline
+          python -m pytest -q
+      - name: Upload offline fixture output
+        uses: actions/upload-artifact@v4
+        with:
+          name: nightly-content-${{ github.run_id }}
+          path: artifacts/content.txt
+          if-no-files-found: error
+          retention-days: 7
