@@ -1,0 +1,26 @@
+[
+  {
+    "width": 375,
+    "actualCommittedGalleryRecording": "faq-bot",
+    "outputMatchesRecording": true,
+    "outputLength": 282,
+    "readOnlyRecordedInput": true,
+    "noPageOverflow": true
+  },
+  {
+    "width": 768,
+    "actualCommittedGalleryRecording": "faq-bot",
+    "outputMatchesRecording": true,
+    "outputLength": 282,
+    "readOnlyRecordedInput": true,
+    "noPageOverflow": true
+  },
+  {
+    "width": 1440,
+    "actualCommittedGalleryRecording": "faq-bot",
+    "outputMatchesRecording": true,
+    "outputLength": 282,
+    "readOnlyRecordedInput": true,
+    "noPageOverflow": true
+  }
+]

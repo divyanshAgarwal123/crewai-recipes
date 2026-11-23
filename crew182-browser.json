@@ -1,0 +1,205 @@
+[
+  {
+    "width": 375,
+    "keyboardDisclosure": true,
+    "noPageOverflow": true,
+    "keyboardResultScroll": true,
+    "allVisibleTargetsAtLeast44px": true,
+    "desktopMatchesBase": false,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "#run-btn"
+          ]
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "targets": [
+          [
+            "html"
+          ]
+        ]
+      },
+      {
+        "id": "region",
+        "targets": [
+          [
+            "#recipe-title"
+          ],
+          [
+            "#recipe-desc"
+          ],
+          [
+            "#dynamic-inputs"
+          ],
+          [
+            ".run-options"
+          ],
+          [
+            ".activity-title"
+          ],
+          [
+            ".tl-logline"
+          ],
+          [
+            ".tl-body"
+          ],
+          [
+            "#result-heading"
+          ],
+          [
+            "#result-badge"
+          ],
+          [
+            "#cached-badge"
+          ]
+        ]
+      },
+      {
+        "id": "scrollable-region-focusable",
+        "targets": [
+          [
+            "#progress-stream"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "keyboardDisclosure": true,
+    "noPageOverflow": true,
+    "keyboardResultScroll": true,
+    "allVisibleTargetsAtLeast44px": true,
+    "desktopMatchesBase": false,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            "#run-btn"
+          ]
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "targets": [
+          [
+            "html"
+          ]
+        ]
+      },
+      {
+        "id": "region",
+        "targets": [
+          [
+            "#recipe-title"
+          ],
+          [
+            "#recipe-desc"
+          ],
+          [
+            "#dynamic-inputs"
+          ],
+          [
+            ".run-options"
+          ],
+          [
+            ".activity-head"
+          ],
+          [
+            ".tl-logline"
+          ],
+          [
+            ".tl-body"
+          ],
+          [
+            "#result-heading"
+          ],
+          [
+            "#result-badge"
+          ],
+          [
+            "#cached-badge"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "keyboardDisclosure": false,
+    "noPageOverflow": true,
+    "keyboardResultScroll": false,
+    "allVisibleTargetsAtLeast44px": false,
+    "desktopMatchesBase": true,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".selected > .recipe-item-desc"
+          ],
+          [
+            "button[data-id=\"second-recipe\"] > .recipe-item-desc"
+          ],
+          [
+            "#clear-history-btn"
+          ],
+          [
+            ".history-item-meta > span:nth-child(2)"
+          ],
+          [
+            ".history-item-timestamp"
+          ]
+        ]
+      },
+      {
+        "id": "landmark-one-main",
+        "targets": [
+          [
+            "html"
+          ]
+        ]
+      },
+      {
+        "id": "region",
+        "targets": [
+          [
+            "#recipe-title"
+          ],
+          [
+            "#recipe-desc"
+          ],
+          [
+            "#dynamic-inputs"
+          ],
+          [
+            ".run-options"
+          ],
+          [
+            ".activity-head"
+          ],
+          [
+            ".tl-logline"
+          ],
+          [
+            ".tl-body"
+          ],
+          [
+            "#result-heading"
+          ],
+          [
+            "#result-badge"
+          ],
+          [
+            "#cached-badge"
+          ]
+        ]
+      }
+    ]
+  }
+]

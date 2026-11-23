@@ -1,0 +1,33 @@
+{
+  "pullRequestIssue": "https://github.com/Karan-Raj-KR/crewai-recipes/issues/182",
+  "head": "8462b7af37afe5c108356bff06b6a19f666f5b0a",
+  "parent": "339114b7fc1b6ec82ed8afed88acf4b832ae8044",
+  "sourceFiles": [
+    "playground/static/index.html"
+  ],
+  "lighthouseMode": "Mobile navigation against the Playground with local recipes and stream fixtures",
+  "lighthouseScores": {
+    "baseline": {
+      "performance": 100,
+      "accessibility": 96.0,
+      "viewportCssPx": 412
+    },
+    "head": {
+      "performance": 100,
+      "accessibility": 96.0,
+      "viewportCssPx": 412
+    }
+  },
+  "notes": [
+    "Synthetic stream fixtures test long-output overflow and keyboard scrolling.",
+    "The built gallery browser run replays the repository's committed faq-bot recording.",
+    "Lighthouse reports the existing color-contrast audit on the parent and the change."
+  ],
+  "files": {
+    "crew182-1440.png": "08b7cacff7f8d21f1270f3f2a687e47374a7d89650abed836d6a8f44050a3c20",
+    "crew182-375.png": "af11b492340ab6439a638e8b435ec962e3c88b027d95f03beaeb71283e33215a",
+    "crew182-768.png": "6e268551e6768b01812f80a8380115cf98af48d7cc97b9ba8ff2b8950cfcbd40",
+    "crew182-browser.json": "3c3193d8188882347d84b1ba27078cc4ca6925576a6719109dd903f0135d08b6",
+    "crew182-gallery-browser.json": "392571ca83d7437fd08d6fb1cce860e4770416459c8f3ac266b153be3283c23e"
+  }
+}
